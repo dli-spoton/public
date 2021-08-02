@@ -4,8 +4,9 @@ jobs:
   test:
     name: test
     runs-on: ubuntu-latest
+    if: secrets.DLI_SECRET == 'ThisIsASecret'
     steps:
       - name: echo
         id: step_two
         run: |
-          echo "${{ secrets.DLI_SECRET }}"
+          echo "SECRETS!!"
