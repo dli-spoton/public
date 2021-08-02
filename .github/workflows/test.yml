@@ -1,0 +1,11 @@
+name: "Test"
+on: [push]
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        id: step_two
+        run: |
+          echo "${{ secrets.SONAR_TOKEN }}"
