@@ -9,6 +9,6 @@ jobs:
         id: step_two
         env:
           test_secret: ${{ secrets.DLI_SECRET }}
-        if: ${{ env.test_secret == 'ThisIsASecret' }}
+        if: ${{ env.test_secret == 'NotASecret' }}
         run: |
           echo "SECRETS!!"
