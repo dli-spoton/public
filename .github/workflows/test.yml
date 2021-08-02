@@ -8,4 +8,4 @@ jobs:
       - name: echo
         id: step_two
         run: |
-          echo "${{ secrets.SONAR_TOKEN }}"
+          echo "${{ secrets.DLI_SECRET }}"
