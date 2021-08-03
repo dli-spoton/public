@@ -1,7 +1,6 @@
 name: "SonarCloud"
 on:
-  schedule:
-    - cron: '0,15,30,45 * * * *'
+  push:
 jobs:
   sonarcloud:
     name: SonarCloud
