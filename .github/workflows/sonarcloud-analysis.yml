@@ -14,4 +14,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          LANG: "en_US.UTF-8"
           # SONAR_SCANNER_OPTS: '-Xmx4096m'
