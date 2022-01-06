@@ -1,6 +1,7 @@
 name: "SonarCloud"
 on:
   pull_request:
+  push:
 jobs:
   sonarcloud:
     name: SonarCloud
