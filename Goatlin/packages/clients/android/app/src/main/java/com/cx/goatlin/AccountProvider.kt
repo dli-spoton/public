@@ -41,6 +41,8 @@ class AccountProvider : ContentProvider() {
         when (uriType) {
             ACCOUNTS_ID -> queryBuilder.appendWhere(ACCOUNTS_ID.toString() + "="
                     + uri.lastPathSegment)
+            ACCOUNTS0 -> {
+            }
             ACCOUNTS -> {
             }
             else -> throw IllegalArgumentException("Unknown URI")
