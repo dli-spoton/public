@@ -43,8 +43,6 @@ class AccountProvider : ContentProvider() {
                     + uri.lastPathSegment)
             ACCOUNTS -> {
             }
-            ACCOUNTS2 -> {
-            }
             else -> throw IllegalArgumentException("Unknown URI")
         }
 
